@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Backend Test</h2>
+
+<button onclick="testBackend()">Test Analyze API</button>
+
+<script>
+function testBackend() {
+  fetch("http://localhost:5000/analyze", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      prompt: "Explain AI in simple words",
+      model: "gpt-4"
+    })
+  })
+  .then(response => response.json())
+  .then(data => {
+    console.log(data);
+    alert("Check VS Code terminal for response!");
+  });
+}
+</script>
+
+</body>
+</html>
