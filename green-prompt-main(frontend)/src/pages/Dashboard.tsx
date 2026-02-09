@@ -70,6 +70,15 @@ const Dashboard = () => {
     co2: 0.0008,
     green_score: 80,
     created_at: "2026-02-05T18:00:00+05:30"
+  },
+  {
+    id: 5,
+    prompt:
+      "I am feeling very nervous today because of our hackathon review — how will the judges evaluate our EcoPrompt project about the environment?",
+    tokens: 45,
+    co2: 0.0007,
+    green_score: 75,
+    created_at: "2026-02-05T18:05:00+05:30"
   }
 ]);
 
